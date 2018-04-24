@@ -18,7 +18,7 @@ include_directories(${CMAKE_CURRENT_LIST_DIR}/3rdparty/include/Opencv
 #5.library目录及name名称
 link_directories(${CMAKE_CURRENT_LIST_DIR}/3rdparty/lib
 				 ${CMAKE_CURRENT_LIST_DIR}/3rdparty/lib/x64)
-list(APPEND SEETA2_LINKER_LIBS opencv_world340 SeetaFaceDetector200 SeetaFaceRecognizer200 SeetaPointDetector200)
+list(APPEND SEETA2_LINKER_LIBS opencv_world320 SeetaFaceDetector200 SeetaFaceRecognizer200 SeetaPointDetector200)
 
 #6.source directory源文件目录
 file(GLOB MTCNN_SRC ${CMAKE_CURRENT_LIST_DIR}/src/*.h
