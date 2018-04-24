@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding"
+    android:weightSum="1"
+    tools:context=".CompareActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/left_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/camera" />
+
+            <Button
+                android:id="@+id/left_local"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="@string/img_local" />
+
+            <Button
+                android:id="@+id/left_take"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_m"
+                android:text="@string/img_take" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/camera" />
+
+            <Button
+                android:id="@+id/right_local"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="@string/img_local" />
+
+            <Button
+                android:id="@+id/right_take"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_m"
+                android:text="@string/img_take" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/compare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_margin_l"
+        android:text="@string/execute" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_margin_l"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_l"
+        android:gravity="center"
+        android:textColor="@color/blue_mix"
+        android:textSize="22sp" />
+
+</LinearLayout>

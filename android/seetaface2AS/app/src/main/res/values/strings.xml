@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">seetaface2AS</string>
+
+    <string name="img_local">本地选择</string>
+    <string name="img_take">拍照上传</string>
+    <string name="execute">比对</string>
+</resources>

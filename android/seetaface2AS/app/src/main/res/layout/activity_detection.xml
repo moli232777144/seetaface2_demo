@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".DetectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="循环测试次数(默认1次): " />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etTestTimeCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1"
+            android:inputType="number"
+            android:text="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选图" />
+        <Button
+            android:id="@+id/buttonDetect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="识别" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/infoResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
